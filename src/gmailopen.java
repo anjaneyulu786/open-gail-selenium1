@@ -2,7 +2,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class gmailopen {
+public class Gmailopen {
 
 			public static void main(String[] args) throws InterruptedException {
 				//  add driver link
@@ -13,28 +13,25 @@ public class gmailopen {
 				driver.get("http:\\gmail.com");
 				Thread.sleep(3000);
 				// mail inputs
-				driver.findElement(By.className("zHQkBf")).sendKeys("samgle.mail@gmail.com");
-				Thread.sleep(1000);   
+				driver.findElement(By.className("zHQkBf")).sendKeys("mailb2331@gmail.com");
+				Thread.sleep(3000);   
 				// click submit
 				driver.findElement(By.className("CwaK9")).click();
 				Thread.sleep(2000);
 				// enter the password in password place
-				driver.findElement(By.className("whsOnd")).sendKeys("password");
-				Thread.sleep(1000);
+				driver.findElement(By.className("whsOnd")).sendKeys("satya6300411865");
 				// click submit
 				driver.findElement(By.className("CwaK9")).click();
 				Thread.sleep(13000);
-				// click on mail
-				driver.findElement(By.id(":2u")).click();
-				Thread.sleep(6000); 
-				
-				driver.findElement(By.xpath("//*[@id=\":6v\"]/div/div[1]/div[1]/div[1]/p/a")).click();
-				Thread.sleep(3000);
-				// switch to the new tab in the browser
-				driver.switchTo().window("Sample mail");
-				Thread.sleep(4000);
-				// close window
+				// open id icon
+				driver.findElement(By.xpath("//*[@id=\"gb\"]/div[2]/div[3]/div/div[2]/div/a/span")).click();
+				Thread.sleep(2000);
+				//sign out button
+				driver.findElement(By.xpath("//*[@id=\"gb_71\"]")).click();
 				driver.close();
+
+				
+			
 	}
 
 }
